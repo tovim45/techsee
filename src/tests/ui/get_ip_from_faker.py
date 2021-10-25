@@ -2,7 +2,7 @@ import allure
 import requests as requests
 
 from infra.utils.selenium_utils import init_driver
-from src.pages.login.faker_page import MainPage
+from src.pages.faker_page import MainPage
 
 base_url = "https://fakercloud.com/api#Internet "
 
