@@ -32,7 +32,7 @@ def test_validate_value_from_Israeli_geo_location():
     assert resp.status_code == 200, "Response code is not 200"
     data = resp.json()
     print(data)
-    assert data['country_code2'] != '-', "Can't find ip " + ip_address + " from Israeli geo-location."
+    assert data['country_code2'] != 'IL', "Can't find ip " + ip_address + " from Israeli geo-location."
 
 
 test_validate_value_from_Israeli_geo_location()
